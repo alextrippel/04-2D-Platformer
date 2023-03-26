@@ -47,6 +47,9 @@ Character sprite: The sprite is an adaptation of [MV Platformer Male](https://op
 
 
 ## Future Development
+Guaranteed:
+Minor level layout tweaks
+
 Possible, but not guaranteed: (Game would have these if I had time)
 
 -Additional guardsman enemy
