@@ -1,0 +1,152 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://Player/Player_Container.gd" type="Script" id=1]
+[ext_resource path="res://Camera.gd" type="Script" id=2]
+[ext_resource path="res://Levels/Ground1.tres" type="TileSet" id=3]
+[ext_resource path="res://Enemies/Enemy_Ground.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Enemies/Enemy_Flying.tscn" type="PackedScene" id=5]
+[ext_resource path="res://HUD/UI.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Coins/Coin.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Coins/Coin_Container.gd" type="Script" id=8]
+[ext_resource path="res://Enemies/Enemy_Container.gd" type="Script" id=9]
+[ext_resource path="res://Assets/Final Tilemap.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Door.png" type="Texture" id=11]
+[ext_resource path="res://Levels/Portal.gd" type="Script" id=12]
+[ext_resource path="res://Collectables/Food.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Collectables/Collectable_Container.gd" type="Script" id=14]
+[ext_resource path="res://Collectables/Key.tscn" type="PackedScene" id=16]
+
+[sub_resource type="TileSet" id=1]
+0/name = "Final Tilemap.png 0"
+0/texture = ExtResource( 10 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 576, 192, 64, 64 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "Final Tilemap.png 1"
+1/texture = ExtResource( 10 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 320, 192, 64, 64 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "Final Tilemap.png 2"
+2/texture = ExtResource( 10 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 640, 192, 64, 64 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "Final Tilemap.png 3"
+3/texture = ExtResource( 10 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 704, 192, 64, 64 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+
+[node name="Game" type="Node2D"]
+
+[node name="Background" type="TileMap" parent="."]
+collision_layer = 0
+collision_mask = 0
+format = 1
+
+[node name="Ground" type="TileMap" parent="."]
+tile_set = ExtResource( 3 )
+collision_layer = 3
+format = 1
+tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 16, 0, 0, 17, 0, 0, 18, 0, 0, 19, 0, 0, 20, 0, 0, 21, 0, 0, 22, 0, 0, 23, 0, 0, 24, 0, 0, 25, 0, 0, 26, 0, 0, 27, 0, 0, 28, 0, 0, 29, 0, 0, 30, 0, 0, 31, 0, 0, 32, 0, 0, 33, 0, 0, 34, 0, 0, 35, 0, 0, 36, 0, 0, 37, 0, 0, 38, 0, 0, 39, 0, 0, 40, 0, 0, 41, 0, 0, 42, 0, 0, 43, 0, 0, 44, 0, 0, 45, 0, 0, 46, 0, 0, 47, 0, 0, 48, 0, 0, 49, 0, 0, 50, 0, 0, 51, 0, 0, 52, 0, 0, 53, 0, 0, 54, 0, 0, 55, 0, 0, 56, 0, 0, 57, 0, 0, 58, 0, 0, 59, 0, 0, 60, 0, 0, 61, 0, 0, 62, 0, 0, 65536, 0, 0, 65598, 0, 0, 131072, 0, 0, 131134, 0, 0, 196608, 0, 0, 196670, 0, 0, 262144, 0, 0, 262206, 0, 0, 327680, 0, 0, 327742, 0, 0, 393216, 0, 0, 393278, 0, 0, 458752, 0, 0, 458814, 0, 0, 524288, 0, 0, 524350, 0, 0, 589824, 0, 0, 589886, 0, 0, 655360, 0, 0, 655422, 0, 0, 720896, 0, 0, 720958, 0, 0, 786432, 0, 0, 786494, 0, 0, 851968, 0, 0, 852030, 0, 0, 917504, 0, 0, 917566, 0, 0, 983040, 0, 0, 983102, 0, 0, 1048576, 0, 0, 1048638, 0, 0, 1114112, 0, 0, 1114174, 0, 0, 1179648, 0, 0, 1179710, 0, 0, 1245184, 0, 0, 1245246, 0, 0, 1310720, 0, 0, 1310782, 0, 0, 1376256, 0, 0, 1376318, 0, 0, 1441792, 0, 0, 1441854, 0, 0, 1507328, 0, 0, 1507390, 0, 0, 1572864, 0, 0, 1572926, 0, 0, 1638400, 0, 0, 1638462, 0, 0, 1703936, 0, 0, 1703998, 0, 0, 1769472, 0, 0, 1769483, 1, 0, 1769534, 0, 0, 1835008, 0, 0, 1835070, 0, 0, 1900544, 0, 0, 1900606, 0, 0, 1966080, 0, 0, 1966142, 0, 0, 2031616, 0, 0, 2031678, 0, 0, 2097152, 0, 0, 2097214, 0, 0, 2162688, 0, 0, 2162689, 0, 0, 2162690, 0, 0, 2162691, 0, 0, 2162692, 0, 0, 2162693, 0, 0, 2162694, 0, 0, 2162695, 0, 0, 2162696, 0, 0, 2162697, 0, 0, 2162698, 0, 0, 2162699, 0, 0, 2162700, 0, 0, 2162701, 0, 0, 2162702, 0, 0, 2162703, 0, 0, 2162704, 0, 0, 2162705, 0, 0, 2162706, 0, 0, 2162707, 0, 0, 2162708, 0, 0, 2162709, 0, 0, 2162710, 0, 0, 2162711, 0, 0, 2162712, 0, 0, 2162713, 0, 0, 2162714, 0, 0, 2162715, 0, 0, 2162716, 0, 0, 2162717, 0, 0, 2162718, 0, 0, 2162719, 0, 0, 2162720, 0, 0, 2162721, 0, 0, 2162722, 0, 0, 2162723, 0, 0, 2162724, 0, 0, 2162725, 0, 0, 2162726, 0, 0, 2162727, 0, 0, 2162728, 0, 0, 2162729, 0, 0, 2162730, 0, 0, 2162731, 0, 0, 2162732, 0, 0, 2162733, 0, 0, 2162734, 0, 0, 2162735, 0, 0, 2162736, 0, 0, 2162737, 0, 0, 2162738, 0, 0, 2162739, 0, 0, 2162740, 0, 0, 2162741, 0, 0, 2162742, 0, 0, 2162743, 0, 0, 2162744, 0, 0, 2162745, 0, 0, 2162746, 0, 0, 2162747, 0, 0, 2162748, 0, 0, 2162749, 0, 0, 2162750, 0, 0 )
+
+[node name="Platform" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
+format = 1
+
+[node name="Player_Container" type="Node2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="Enemy_Container" type="Node2D" parent="."]
+script = ExtResource( 9 )
+
+[node name="Enemy_Flying" parent="Enemy_Container" instance=ExtResource( 5 )]
+position = Vector2( 1310, 83 )
+
+[node name="Enemy_Ground" parent="Enemy_Container" groups=["Enemy_Ground"] instance=ExtResource( 4 )]
+position = Vector2( 1688, 722 )
+
+[node name="Coin_Container" type="Node2D" parent="."]
+script = ExtResource( 8 )
+
+[node name="Coin" parent="Coin_Container" instance=ExtResource( 7 )]
+position = Vector2( 120, 160 )
+
+[node name="Coin2" parent="Coin_Container" instance=ExtResource( 7 )]
+position = Vector2( 1696, 360 )
+
+[node name="Coin3" parent="Coin_Container" instance=ExtResource( 7 )]
+position = Vector2( 580, 760 )
+
+[node name="Attack_Container" type="Node2D" parent="."]
+
+[node name="Collectable_Container" type="Node2D" parent="."]
+script = ExtResource( 14 )
+
+[node name="Key" parent="Collectable_Container" groups=["Key"] instance=ExtResource( 16 )]
+position = Vector2( 500, 2000 )
+
+[node name="Food" parent="Collectable_Container" groups=["Food"] instance=ExtResource( 13 )]
+position = Vector2( 1000, 2000 )
+
+[node name="Portal_to_3" type="Area2D" parent="."]
+position = Vector2( 1600, 225 )
+script = ExtResource( 12 )
+
+[node name="Sprite" type="Sprite" parent="Portal_to_3"]
+texture = ExtResource( 11 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Portal_to_3"]
+polygon = PoolVector2Array( 14, -29.6, 14, -27.8, 21, -20.8, 21, -17, 22.9, 32, -21, 32, -18.9, -23, -16.9, -23, -10.9, -30, -8.4, -30, -5, -31.4, -5, -32, 2, -32 )
+
+[node name="Foreground" type="TileMap" parent="."]
+format = 1
+
+[node name="Camera" type="Camera2D" parent="."]
+current = true
+limit_left = 0
+limit_top = 0
+limit_right = 2300
+limit_bottom = 20000
+script = ExtResource( 2 )
+
+[node name="UI" parent="." instance=ExtResource( 6 )]
+
+[connection signal="body_entered" from="Portal_to_3" to="Portal_to_3" method="_on_Portal_entered"]
