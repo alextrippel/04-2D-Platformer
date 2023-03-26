@@ -27,7 +27,6 @@ func _on_Area2D_body_entered(body):
 		velocity.x = 0
 		direction *= -1
 	if body.name == "Player" :
-		print(self.get_parent().name)
 		body.do_damage(damage)
 
 

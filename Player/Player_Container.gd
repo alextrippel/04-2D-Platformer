@@ -7,10 +7,10 @@ export var spawn_location2 = Vector2(100,2000)
 func _process(_delta):
 	var player = get_node_or_null("Player")
 	if player == null :
-		if Global.level > 0:
-			spawn(spawn_location2)
-		else:
+		if Global.level == 0:
 			spawn(spawn_location)
+		else:
+			spawn(spawn_location2)
 		
 
 func spawn(p):

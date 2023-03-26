@@ -25,10 +25,10 @@ func physics_process(_delta):
 	if Input.is_action_pressed("jump"):
 		if player.is_on_left_wall():
 			player.velocity.x = 300
-			player.direction = 1
+			player.direction = -1
 		if player.is_on_right_wall():
 			player.velocity.x = -300
-			player.direction = -1
+			player.direction = 1
 		player.wait = true
 		SM.set_state('Jumping')
 	if player.velocity.y < 0:

@@ -7,6 +7,8 @@ export var looking_speed = 100
 var damage = 35
 var score = 10
 var velocity = Vector2.ZERO
+export var is_spawned = false
+
 func _physics_process(_delta):
 	if velocity.x > 0 and !$AnimatedSprite.flip_h:
 		$AnimatedSprite.flip_h = true
@@ -30,5 +32,8 @@ func _on_Area2D_body_entered(body):
 		player = null
 
 func die():
-	Global.score += score*(Global.flying_left+1)
+	if is_spawned:
+		Global.score += score*(Global.flying_left+1)
+	else :
+		Global.score += score
 	queue_free()

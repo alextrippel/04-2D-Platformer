@@ -2,7 +2,7 @@ extends Node
 
 onready var SM = get_parent()
 onready var player = get_node("../..")
-onready var particles = get_node('/root/Game/Player_Container/Player/CPUParticles2D')
+
 func _ready():
 	yield(player, "ready")
 

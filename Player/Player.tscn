@@ -180,23 +180,6 @@ one_shot = true
 [node name="Wall_Slide" type="Node" parent="StateMachine"]
 script = ExtResource( 10 )
 
-[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
-position = Vector2( 0, 27 )
-scale = Vector2( 2, 2 )
-emitting = false
-lifetime = 0.5
-one_shot = true
-randomness = 1.0
-emission_shape = 2
-emission_rect_extents = Vector2( 5, 1 )
-spread = 180.0
-gravity = Vector2( 0, 5 )
-initial_velocity = 10.0
-initial_velocity_random = 1.0
-angular_velocity = 360.0
-angular_velocity_random = 1.0
-color = Color( 0.513726, 0.482353, 0.423529, 1 )
-
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.1
 

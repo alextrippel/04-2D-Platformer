@@ -11,7 +11,7 @@ onready var overlay = get_node('/root/Game/UI/Overlay')
 onready var overlay_die = get_node('/root/Game/UI/Death_Overlay')
 
 export var gravity = Vector2(0,30)
-export var wall_slide = Vector2(0,10)
+export var wall_slide = Vector2(0,-5)
 export var move_speed = 20
 export var max_move = 300
 
@@ -32,7 +32,7 @@ func _ready():
 	overlay_die.connect('faded_in', self, '_faded_in')
 	paused = true
 	overlay_die.fade_in()
-	
+
 func _physics_process(_delta):
 	if not paused:
 		velocity.x = clamp(velocity.x,-max_move,max_move)

@@ -13,5 +13,5 @@ func _on_Replay_pressed():
 	Global.score = 0
 	Global.lives = Global.max_lives
 	Global.health = Global.max_health
-	Global.level = 1
+	Global.level = 0
 	get_tree().change_scene('res://Levels/Level1.tscn')

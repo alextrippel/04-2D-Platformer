@@ -22,4 +22,7 @@ polygon = PoolVector2Array( 10, -15.7, 10, -9.5, 6.8, -3, 11, 2.3, 11, 11, 9.1, 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource( 1 )
 
+[node name="Tween" type="Tween" parent="."]
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="tween_all_completed" from="Tween" to="." method="_on_Tween_tween_all_completed"]

@@ -15,6 +15,8 @@ var inventory = []
 
 var levels = ['res://Levels/Level1.tscn',
 'res://Levels/Level2.tscn',
+'res://Levels/Level3.tscn'
+
 ]
 
 func _ready():
@@ -39,6 +41,7 @@ func decrease_lives(l):
 	lives -= l
 	health = max_health
 	if lives <= 0:
+# warning-ignore:return_value_discarded
 		get_tree().change_scene('res://Levels/Game_Over.tscn')
 
 func increase_score(s):
@@ -115,14 +118,15 @@ func load_save_level(data):
 	lives = data['lives']
 	health = data['health']
 	flying_left = data['flying_left']
+	inventory = data['inventory']
 	var savedlevel = data['level']
-	
+	level = levels.find(levels[savedlevel])
+# warning-ignore:return_value_discarded
 	get_tree().change_scene(levels[savedlevel])
 	call_deferred("load_save_data", data)
 
 
 func load_save_data(data):
-	flying_left = data['flying_left']
 	var menu = get_node_or_null('/root/Game/UI/Menu')
 	if menu != null:
 		menu.show()

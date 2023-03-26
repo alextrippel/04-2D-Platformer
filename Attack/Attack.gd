@@ -1,11 +1,13 @@
 extends Area2D
 
-var direction = 1
+var direction = null
 var velocity = Vector2.ZERO
 var speed = 10
 var dead = false
 
 func _ready():
+	var player = get_node_or_null('/root/Game/Player_Container/Player')
+	direction = player.direction
 	$AnimatedSprite.animation = 'start'
 	$AnimatedSprite.playing = true
 
@@ -29,6 +31,7 @@ func _on_AnimatedSprite_animation_finished():
 	if $AnimatedSprite.animation == 'start':
 		$AnimatedSprite.animation = 'default'
 	if $AnimatedSprite.animation == 'end':
+		print(Global.inventory)
 		queue_free()
 	$AnimatedSprite.playing = true
 
