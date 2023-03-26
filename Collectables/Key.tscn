@@ -6,7 +6,7 @@
 [sub_resource type="CircleShape2D" id=1]
 radius = 20.0
 
-[node name="Key" type="KinematicBody2D"]
+[node name="Key" type="KinematicBody2D" groups=["Key"]]
 collision_layer = 0
 collision_mask = 0
 script = ExtResource( 1 )

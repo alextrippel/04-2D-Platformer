@@ -55,7 +55,6 @@ func save_game(which_file):
 	file.close()
 
 func load_game(which_file):
-	get_tree().paused = true
 	var file = File.new()
 	if file.file_exists(saves[which_file]):
 		file.open(saves[which_file], file.READ)
@@ -98,6 +97,7 @@ func get_save_data():
 			data['enemy_flying'].append(temp)
 	
 	var collectables = get_node('/root/Game/Collectable_Container').get_children()
+	print(collectables)
 	for c in collectables:
 		if c.is_in_group("Key"):
 			var temp = {'position':var2str(c.position)}

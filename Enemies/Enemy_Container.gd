@@ -2,7 +2,7 @@ extends Node2D
 
 onready var E_Ground = load('res://Enemies/Enemy_Ground.tscn')
 onready var E_Flying = load('res://Enemies/Enemy_Flying.tscn')
-var spawn_point = [Vector2(1300,100),Vector2(640,100),Vector2(2000,800)]
+var spawn_point = [Vector2(1300,100),Vector2(640,100),Vector2(2176,1500)]
 #enemy dict is like this: {type, position, max constraint, min constraint}
 func _physics_process(_delta):
 	var count = 0
