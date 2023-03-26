@@ -27,7 +27,7 @@ func _on_Portal_entered(body):
 
 
 func _on_Unlock_body_entered(body):
-	if Global.level == 2 and inv.has('key') and $Unlock.visible and body.name == 'Player':
+	if (Global.level == 2 or Global.level == 3) and inv.has('key') and $Unlock.visible and body.name == 'Player':
 		$Unlock.visible = false
 		Global.inventory.erase('key')
 		self.set_collision_mask_bit(0,true)

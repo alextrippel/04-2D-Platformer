@@ -20,6 +20,7 @@ func _physics_process(_delta):
 	velocity = move_and_slide(velocity, Vector2.UP)
 		
 func die():
+	Global.score += 10
 	queue_free()
 
 func _on_Area2D_body_entered(body):

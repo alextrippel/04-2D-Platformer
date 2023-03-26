@@ -55,6 +55,7 @@ func save_game(which_file):
 	file.close()
 
 func load_game(which_file):
+	get_tree().paused = true
 	var file = File.new()
 	if file.file_exists(saves[which_file]):
 		file.open(saves[which_file], file.READ)
@@ -76,6 +77,7 @@ func get_save_data():
 		"player":'',
 		"enemy_ground":[],
 		'key':[],
+		'chest':[],
 		"enemy_flying":[],
 		"food":[],
 		"coins":[],
@@ -100,6 +102,9 @@ func get_save_data():
 		if c.is_in_group("Key"):
 			var temp = {'position':var2str(c.position)}
 			data['key'].append(temp)
+		if c.is_in_group("Chest"):
+			var temp = {'position':var2str(c.position)}
+			data['chest'].append(temp)
 		if c.is_in_group("Food"):
 			var temp = {'position':var2str(c.position)}
 			data['food'].append(temp)
@@ -153,6 +158,9 @@ func load_save_data(data):
 	for c in data["key"]:
 		var attr = {}
 		collectable_container.spawn("Key",attr,str2var(c['position']))
+	for c in data["chest"]:
+		var attr = {}
+		collectable_container.spawn("Chest",attr,str2var(c['position']))
 	for c in data["food"]:
 		var attr = {}
 		collectable_container.spawn("Food",attr,str2var(c['position']))
