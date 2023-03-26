@@ -1,6 +1,5 @@
 extends Area2D
 
-
 func _ready():
 	pass
 
@@ -19,4 +18,5 @@ func _on_Portal_entered(body):
 			Global.flying_left = 5
 			get_tree().change_scene(Global.levels[Global.level])
 		else:
+			
 			get_tree().change_scene('res://Levels/Game_Over.tscn')
