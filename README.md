@@ -11,12 +11,23 @@ Controllable player with a double jump, wall jump, healthbar, and fireball attac
 Collectables: A key to unlock doors and treasure chests as well as food to regain health
 Two enemies: One that flies, one that remains grounded
 4 Levels, with two different color palletes
-Original tilemap
+Original sprites and tilemap
 Music
 
 ## References
+Music: Second Sonata- Maligned Chords https://patrickdearteaga.com/royalty-free-music/page-2/
 
+Font: Bluu Next Bold - This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
 
+Spell Spritesheet: This work, made by Viktor Hahn (Viktor.Hahn@web.de), is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0). https://creativecommons.org/licenses/by/4.0/
+
+Animated Rat and Bat by Calciumtrice, usable under Creative Commons Attribution 3.0 license.
+
+Character sprite: The sprite is an adaptation of [MV Platformer Male](https://opengameart.org/content/mv-platformer-male-32x64) by MoikMellah. CC0 Licensed.
+
+(All other sprites produced by Alexander Trippel)
 
 ## Future Development
 Possible, but not guaranteed: (Game would have these if I had time)
