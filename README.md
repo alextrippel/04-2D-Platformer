@@ -7,6 +7,8 @@ Description
 A short 2D platformer game with 4 levels which has a controllable player character, multiple enemies, and doorways between levelsv
 
 ## Implementation
+Single save file save and load
+
 Controllable player with a double jump, wall jump, healthbar, and fireball attack
 
 Collectables: A key to unlock doors and treasure chests as well as food to regain health
@@ -16,6 +18,10 @@ Two enemies: One that flies, one that remains grounded
 4 Levels, with two different color palletes
 
 Original sprites and tilemap
+
+Visuals to show taking damage
+
+Spikes that deal damage and send player back to spawn
 
 Music
 
@@ -41,6 +47,9 @@ Character sprite: The sprite is an adaptation of [MV Platformer Male](https://op
 
 
 ## Future Development
+Guaranteed:
+Minor level layout tweaks
+
 Possible, but not guaranteed: (Game would have these if I had time)
 
 -Additional guardsman enemy
