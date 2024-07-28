@@ -1,0 +1,86 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1722136662
+Camera.gd::GDScript::-1::1722136563::0::1::::<>Camera2D<>::
+default_env.tres::Environment::-1::1722136563::0::1::::<><>::
+Global.gd::GDScript::-1::1722136563::0::1::::<>Node<>::
+icon.png::CompressedTexture2D::502925870674005924::1722136563::1722136720::1::::<><>::
+README.md::TextFile::-1::1722136563::0::1::::<><>::
+::res://Assets/::1722136663
+2nd Sonata - Malign Chords.ogg::AudioStreamOggVorbis::5114197646368642525::1722136563::1722136663::1::::<><>::
+Adventurer.png::CompressedTexture2D::1476682174669375815::1722136563::1722136720::1::::<><>::
+Animated_Coin.png::CompressedTexture2D::6267774339656014027::1722136563::1722136720::1::::<><>::
+BluuNext-Bold.otf::FontFile::7220471911420623740::1722136563::1722136720::1::::<><>::
+Chest.png::CompressedTexture2D::5331712524889326693::1722136563::1722136720::1::::<><>::
+Chest_Empty.png::CompressedTexture2D::5401849671613274980::1722136563::1722136720::1::::<><>::
+Chest_Open.png::CompressedTexture2D::3557146429599793160::1722136563::1722136720::1::::<><>::
+Door.png::CompressedTexture2D::1298792314045340854::1722136563::1722136720::1::::<><>::
+Fantasy TileMap.png::CompressedTexture2D::4225118781260389774::1722136563::1722136720::1::::<><>::
+Final Tilemap.png::CompressedTexture2D::2600071241867132566::1722136563::1722136720::1::::<><>::
+fireball.png::CompressedTexture2D::9220821950145346242::1722136563::1722136722::1::::<><>::
+Food (1).png::CompressedTexture2D::4419486389577565218::1722136563::1722136720::1::::<><>::
+FullHealth.png::CompressedTexture2D::36553880624645965::1722136563::1722136720::1::::<><>::
+HealthOverlay.png::CompressedTexture2D::2501620218733368458::1722136563::1722136720::1::::<><>::
+Hook.png::CompressedTexture2D::5036580367546553320::1722136563::1722136720::1::::<><>::
+Key.png::CompressedTexture2D::4377336027640067449::1722136563::1722136720::1::::<><>::
+Keydoor.png::CompressedTexture2D::851179333615795515::1722136563::1722136720::1::::<><>::
+MissingHealth.png::CompressedTexture2D::3895007398352183632::1722136563::1722136720::1::::<><>::
+player.png::CompressedTexture2D::1170631457358937359::1722136563::1722136720::1::::<><>::
+rat and bat spritesheet calciumtrice.png::CompressedTexture2D::3884315262979445577::1722136563::1722136720::1::::<><>::
+Rope.png::CompressedTexture2D::8604502233811001572::1722136563::1722136720::1::::<><>::
+Warrior.png::CompressedTexture2D::4265322621685998402::1722136563::1722136720::1::::<><>::
+::res://Assets/bat/::1722136563
+bat_attack.png::CompressedTexture2D::8440448161994261642::1722136563::1722136720::1::::<><>::
+bat_die.png::CompressedTexture2D::3373054121426329891::1722136563::1722136720::1::::<><>::
+bat_move.png::CompressedTexture2D::3929175429219363220::1722136563::1722136720::1::::<><>::
+::res://Attack/::1722136563
+Attack.gd::GDScript::-1::1722136563::0::1::::<>Area2D<>::
+Attack.tscn::PackedScene::-1::1722136563::0::1::::<><>::res://Assets/fireball.png<>res://Attack/Attack.gd
+::res://Coins/::1722136563
+Coin.gd::GDScript::-1::1722136563::0::1::::<>Area2D<>::
+Coin.tscn::PackedScene::-1::1722136563::0::1::::<><>::res://Coins/Coin.gd<>res://Assets/Animated_Coin.png
+Coin_Container.gd::GDScript::-1::1722136563::0::1::::<>Node2D<>::
+::res://Collectables/::1722136563
+Chest.gd::GDScript::-1::1722136563::0::1::::<>Area2D<>::
+Chest.tscn::PackedScene::-1::1722136563::0::1::::<><>::res://Collectables/Chest.gd<>res://Assets/Chest.png
+Collectable_Container.gd::GDScript::-1::1722136563::0::1::::<>Node2D<>::
+Food.gd::GDScript::-1::1722136563::0::1::::<>KinematicBody2D<>::
+Food.tscn::PackedScene::-1::1722136563::0::1::::<><>::res://Assets/Food (1).png<>res://Collectables/Food.gd
+Key.gd::GDScript::-1::1722136563::0::1::::<>KinematicBody2D<>::
+Key.tscn::PackedScene::-1::1722136563::0::1::::<><>::res://Collectables/Key.gd<>res://Assets/Key.png
+::res://Enemies/::1722136563
+Enemy_Container.gd::GDScript::-1::1722136563::0::1::::<>Node2D<>::
+Enemy_Flying.gd::GDScript::-1::1722136563::0::1::::<>KinematicBody2D<>::
+Enemy_Flying.tscn::PackedScene::-1::1722136563::0::1::::<><>::res://Enemies/Enemy_Flying.gd<>res://Assets/rat and bat spritesheet calciumtrice.png
+Enemy_Ground.gd::GDScript::-1::1722136563::0::1::::<>KinematicBody2D<>::
+Enemy_Ground.tscn::PackedScene::-1::1722136563::0::1::::<><>::res://Enemies/Enemy_Ground.gd<>res://Assets/rat and bat spritesheet calciumtrice.png
+::res://HUD/::1722136563
+Death_Overlay.gd::GDScript::-1::1722136563::0::1::::<>ColorRect<>::
+HUD.gd::GDScript::-1::1722136563::0::1::::<>Control<>::
+Menu.gd::GDScript::-1::1722136563::0::1::::<>Control<>::
+Overlay.gd::GDScript::-1::1722136563::0::1::::<>ColorRect<>::
+UI.tscn::PackedScene::-1::1722136563::0::1::::<><>::res://Assets/MissingHealth.png<>res://Assets/FullHealth.png<>res://Assets/HealthOverlay.png<>res://HUD/HUD.gd<>res://HUD/Menu.gd<>res://HUD/Overlay.gd<>res://HUD/Death_Overlay.gd<>res://Assets/BluuNext-Bold.otf
+::res://Levels/::1722136563
+Area2D.gd::GDScript::-1::1722136563::0::1::::<>Area2D<>::
+Game_Over.gd::GDScript::-1::1722136563::0::1::::<>Control<>::
+Game_Over.tscn::PackedScene::-1::1722136563::0::1::::<><>::res://Levels/Game_Over.gd<>res://Assets/BluuNext-Bold.otf
+Ground1.tres::TileSet::-1::1722136563::0::1::::<><>::res://Assets/Fantasy TileMap.png<>res://Assets/Final Tilemap.png
+Level1.tscn::PackedScene::-1::1722136563::0::1::::<><>::res://Player/Player_Container.gd<>res://Camera.gd<>res://Levels/Ground1.tres<>res://Enemies/Enemy_Ground.tscn<>res://Collectables/Collectable_Container.gd<>res://HUD/UI.tscn<>res://Coins/Coin.tscn<>res://Coins/Coin_Container.gd<>res://Enemies/Enemy_Container.gd<>res://Assets/Final Tilemap.png<>res://Assets/Door.png<>res://Levels/Portal.gd<>res://Levels/Spikes.tscn<>res://Assets/2nd Sonata - Malign Chords.ogg
+Level2.tscn::PackedScene::-1::1722136563::0::1::::<><>::res://Player/Player_Container.gd<>res://Camera.gd<>res://Levels/Ground1.tres<>res://Enemies/Enemy_Ground.tscn<>res://Enemies/Enemy_Flying.tscn<>res://HUD/UI.tscn<>res://Coins/Coin.tscn<>res://Coins/Coin_Container.gd<>res://Enemies/Enemy_Container.gd<>res://Assets/Final Tilemap.png<>res://Assets/Door.png<>res://Levels/Portal.gd<>res://Collectables/Food.tscn<>res://Collectables/Collectable_Container.gd<>res://Assets/2nd Sonata - Malign Chords.ogg<>res://Collectables/Key.tscn<>res://Levels/Spikes.tscn<>res://Collectables/Chest.tscn
+Level3.tscn::PackedScene::-1::1722136563::0::1::::<><>::res://Player/Player_Container.gd<>res://Camera.gd<>res://Levels/Ground1.tres<>res://Assets/Keydoor.png<>res://Enemies/Enemy_Ground.tscn<>res://HUD/UI.tscn<>res://Coins/Coin.tscn<>res://Coins/Coin_Container.gd<>res://Enemies/Enemy_Container.gd<>res://Assets/Final Tilemap.png<>res://Assets/Door.png<>res://Levels/Portal.gd<>res://Collectables/Food.tscn<>res://Collectables/Collectable_Container.gd<>res://Assets/2nd Sonata - Malign Chords.ogg<>res://Collectables/Key.tscn<>res://Enemies/Enemy_Flying.tscn<>res://Collectables/Chest.tscn<>res://Levels/Spikes.tscn
+Portal.gd::GDScript::-1::1722136563::0::1::::<>Area2D<>::
+Spikes.gd::GDScript::-1::1722136563::0::1::::<>Area2D<>::
+Spikes.tscn::PackedScene::-1::1722136563::0::1::::<><>::res://Levels/Spikes.gd
+::res://Player/::1722136563
+Player.gd::GDScript::-1::1722136563::0::1::::<>KinematicBody2D<>::
+Player.tscn::PackedScene::-1::1722136563::0::1::::<><>::res://Assets/player.png<>res://StateMachine/Jumping.gd<>res://StateMachine/Moving.gd<>res://StateMachine/StateMachine.gd<>res://StateMachine/Coyote.gd<>res://StateMachine/Idle.gd<>res://StateMachine/Falling.gd<>res://Player/Player.gd<>res://Player/Wall_Slide.gd
+Player_Container.gd::GDScript::-1::1722136563::0::1::::<>Node2D<>::
+Wall_Slide.gd::GDScript::-1::1722136563::0::1::::<>Node<>::
+::res://StateMachine/::1722136563
+Coyote.gd::GDScript::-1::1722136563::0::1::::<>Node<>::
+Falling.gd::GDScript::-1::1722136563::0::1::::<>Node<>::
+Idle.gd::GDScript::-1::1722136563::0::1::::<>Node<>::
+Jumping.gd::GDScript::-1::1722136563::0::1::::<>Node<>::
+Moving.gd::GDScript::-1::1722136563::0::1::::<>Node<>::
+Moving_and_Jumping.gd::GDScript::-1::1722136563::0::1::::<>Node<>::
+Player_Container.gd::GDScript::-1::1722136563::0::1::::<>Node2D<>::
+StateMachine.gd::GDScript::-1::1722136563::0::1::::<>Node<>::
